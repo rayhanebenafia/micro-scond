@@ -1,2 +1,2 @@
 # micro-scond
-123
+https://github.com/rayhanebenafia/micro-scond.git
