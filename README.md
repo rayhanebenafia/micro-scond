@@ -1,2 +1,2 @@
 # micro-scond
-https://github.com/rayhanebenafia/micro-scond.git
+https://rayhanebenafia.github.io/micro-scond/
