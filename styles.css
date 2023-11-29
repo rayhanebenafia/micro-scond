@@ -1,0 +1,18 @@
+* {
+    font-family:'LATINO', sans-serif;
+    color: #272A31;
+}
+
+h1 {
+    font-family: 'COCOGOOSE' , sans-serif;
+    background-image: url('./backgrounds/orange-light.jpg');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.date {
+    font-family: 'COCOGOOSE' , sans-serif;
+}
