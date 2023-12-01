@@ -22,8 +22,13 @@
 
 <body>
     <header>
+        <!-- Mobile Navbar -->
+        <div class="hidden max-sm:block bg-[#F6F6F6] pt-8 pl-8 ">
+               
+            <i class="fa-solid fa-bars fa-xl" style="color: #565656;"></i>
+          </div>
         <!-- Top-Page-Navbar -->
-        <nav class="bg-[#3E3E3E] flex justify-end gap-x-3 pr-60 py-2  text-white text-xs ">
+        <nav class="bg-[#3E3E3E] flex justify-end gap-x-3 pr-60 py-2  text-white text-xs max-sm:hidden">
             <!-- Logos (Facebook+Twitter) -->
             <a href="#"><i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i></a>
             <a href="#"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
@@ -33,7 +38,7 @@
             <a href="#">Logout</a>
         </nav>
         <!-- Navbar -->
-        <nav class="flex items-center place-content-around gap-x-1 px-60  py-2 text-xs text-[#585858]">
+        <nav class="flex items-center place-content-around gap-x-1 px-60  py-2 text-xs text-[#585858] max-sm: hidden">
             <!-- CC-Logo -->
             <a ref="#"><img src="./logos/logo.png" alt="CC Global Icon" class=" w-48 h-100% pr-20"></a>
             <!-- Menu -->
@@ -53,90 +58,103 @@
 
     <main>
         <!-- About Section -->
-        <section class="bg-[#F6F6F6] flex flex-start flex-col px-64 py-20 ">
-            <h2 class="text-4xl text-[#EE523C] py-3">"Hello ! Sharing world"</h2>
-            <h1 class="text-6xl text-[#EE523C] ">CREATIVE COMMONS</h1>
-            <h1 class="text-6xl text-[#EE523C] ">GLOBAL SUMMIT</h1>
-            <h1 class="text-6xl text-[#EE523C] pb-3 ">2015</h1>
+        <section class="bg-[#F6F6F6] flex flex-start flex-col px-64 py-20 max-sm:px-8 max-sm:py-[30px]">
+            <h2 class="text-4xl text-[#EE523C] py-3 max-sm:text-2xl">"Hello ! Sharing world"</h2>
+            <h1 class="text-6xl text-[#EE523C] max-sm:text-4xl">CREATIVE COMMONS</h1>
+            <h1 class="text-6xl text-[#EE523C] max-sm:text-4xl">GLOBAL SUMMIT</h1>
+            <h1 class="text-6xl text-[#EE523C] max-sm:text-4xl pb-3 ">2015</h1>
             <div class="border-4 border-white inline-block p-4 w-fit">
                 <p class="text-xs text-[#565656]">A joyful celebration believing in the value of openness and sharing,
                     creating</p>
                 <p class="text-xs text-[#565656]">a postive chcange with people from over 80 countries is taking place
                     in October, in Korea</p>
             </div>
-            <h2 class="date text-4xl text-[#565656] pt-6 pb-2">2015.10.15(THU) ~ 16(FRI)</h2>
-            <h3 class="text-[#565656]">@ National Museum of Korea, Art Center Nabi and more</h3>
+            <h2 class="date text-4xl text-[#565656] pt-6 pb-2 max-sm:text-2xl">2015.10.15(THU) ~ 16(FRI)</h2>
+            <h3 class="text-[#565656] max-sm:text-sm max-sm:pb-8">@ National Museum of Korea, Art Center Nabi and more</h3>
         </section>
         <!-- Main Program Section -->
-        <section class=" flex flex-col justify-center items-center py-10 px-28 "
+        <section class=" flex flex-col justify-center items-center py-10 px-28 max-sm:px-0 "
             style="background-image: url('./backgrounds/main-background.png');">
             <h2 class="text-[#FFFFFF] text-xl">Main Program</h2>
             <!-- Orange Line -->
             <div class="w-10 h-px bg-[#EE523C] mt-2 mb-8"></div>
             <!-- Container -->
-            <div class="flex flex-col justify-center px-20 gap-10 items-center">
-                <ul class="flex flex-row justify-center items-stretch text-center gap-1">
+            <div class="flex flex-col justify-center px-20 gap-10 items-center max-sm:px-0 w-fit">
+                <ul class="flex flex-row justify-center items-stretch text-center gap-1 max-sm:grid ">
                     <!-- Lecture -->
-                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-center  gap-2 ">
-                        <i class="fa-solid fa-person-chalkboard fa-xl py-4" style="color: #ffffff;"></i>
-                        <p class="text-[#EE523C] font-bold">Lecture</p>
-                        <p class="text-[#FFFFFF] text-xs ">Listen to the speakers from various countries about the
+                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-center  gap-2 max-sm:flex-row max-sm:gap-2.5 max-sm:items-center  max-sm:justify-start ">
+                        
+                            <i class="fa-solid fa-person-chalkboard fa-xl py-4" style="color: #ffffff;"></i>
+                            <p class="text-[#EE523C] font-bold">Lecture</p>
+                        
+                        <p class="text-[#FFFFFF] text-xs max-sm:text-left">Listen to the speakers from various countries about the
                             messages of sharing and opening.</p>
                     </li>
                     <!-- CC Exhibition-->
-                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2">
+                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2 max-sm:flex-row max-sm:gap-[10px] max-sm:items-center max-sm:justify-start">
+                        
                         <i class="fa-solid fa-images fa-xl py-4" style="color: #ffffff;"></i>
                         <p class="text-[#EE523C] font-bold">CC Exhibition</p>
-                        <p class="text-[#FFFFFF] text-xs">Appreciate various creations applying CC licence of artists,
+                    
+                        <p class="text-[#FFFFFF] text-xs max-sm:text-left">Appreciate various creations applying CC licence of artists,
                             organized from Art Center Nabi.</p>
                     </li>
                     <!-- Forum -->
-                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start gap-2 ">
+                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start gap-2 max-sm:flex-row max-sm:gap-[10px] max-sm:items-center max-sm:justify-start">
+                        
                         <i class="fa-regular fa-comment-dots fa-2xl py-4" style="color: #ffffff;"></i>
                         <p class="text-[#EE523C] font-bold">Forum</p>
-                        <p class="text-[#FFFFFF] text-xs">Have the time to share your thoughts and opinions with experts
+                    
+                        <p class="text-[#FFFFFF] text-xs max-sm:text-left">Have the time to share your thoughts and opinions with experts
                             for each topic.</p>
                     </li>
                     <!-- Workshop -->
-                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2">
+                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2 max-sm:flex-row max-sm:gap-[10px] max-sm:items-center max-sm:justify-center">
+                       
                         <i class="fa-solid fa-chalkboard-user fa-xl py-4" style="color: #ffffff;"></i>
                         <p class="text-[#EE523C] font-bold">Workshop</p>
-                        <p class="text-[#FFFFFF] text-xs">Try creating your own work using open source license rather
+                    
+                        <p class="text-[#FFFFFF] text-xs max-sm:text-left">Try creating your own work using open source license rather
                             than just watching at it.</p>
                     </li>
                     <!-- CC Ignite -->
-                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2">
+                    <li class="bg-[#5f585c36] p-6 flex flex-col justify-start  gap-2 max-sm:flex-row max-sm:gap-[10px] max-sm:items-center max-sm:justify-center">
+                        
                         <i class="fa-solid fa-diagram-project fa-xl py-4" style="color: #ffffff;"></i>
                         <p class="text-[#EE523C] font-bold">CC Ignite</p>
-                        <p class="text-[#FFFFFF] text-xs">Get opportunities to network wth CC affiliates around the
+                    
+                        <p class="text-[#FFFFFF] text-xs max-sm:text-left">Get opportunities to network wth CC affiliates around the
                             world, also after the summit.</p>
                     </li>
                 </ul>
                 <!-- Footer of Main Program -->
-                <a href="#" class=" pt-4 pb-4 ">
+                <a href="#" class=" pt-4 pb-4 max-sm:hidden">
                     <p class="text-[#FFFFFF] underline underline-offset-[4px]">SEE THE WHOLE PROGRAM</p>
                 </a>
+                <button class="sm:hidden text-[#FFFFFF] bg-[#EE523C] px-10 py-8 ">
+                    Join CC Global Summit 2015
+                </button>
             </div>
         </section>
         <!-- Featured Speakers  -->
-        <section class=" bg-[#F8F8F8] flex flex-col justify-center items-center  py-10 font-bold">
+        <section class=" bg-[#F8F8F8] flex flex-col justify-center items-center  py-10 font-bold max-sm:bg-[#FFFFFF] ">
             <h2 class=" text-xl">Featured Speakers</h2>
             <!-- Orange Line -->
             <div class="w-10 h-px bg-[#EE523C] mt-2 mb-8"></div>
             <!-- Container -->
-            <div class="grid grid-cols-2 grid-row-3 gap-10">
+            <div class="grid grid-cols-2 grid-row-3 gap-10 max-sm:grid-cols-1">
                 <!-- Speaker 1 -->
-                <div class="flex  gap-10">
+                <div class="flex  gap-10 ">
                     <div>
-                        <img class="w-14 h-14 absolute  " src="./backgrounds/png-background.png"
+                        <img class="w-14 h-14 absolute   " src="./backgrounds/png-background.png"
                             alt="PNG background image">
                         <img class="w-32 h-32 relative top-4 left-4" src="./speakers/Yochai-Benkler.png"
                             alt="Yochai Benkler's Photo">
                     </div>
 
-                    <div class="w-56">
+                    <div class="w-56 ">
                         <h2 class="font-bold text-xl pb-1">Yochai Benkler</h2>
-                        <p class="italic text-[#EE523C] text-xs font-bold pb-1">Berkman Professor of Entrepreneurial
+                        <p class="italic text-[#EE523C] text-xs font-bold pb-1 ">Berkman Professor of Entrepreneurial
                             Legal studies at Harvard Law School</p>
                         <div class="w-6 h-px bg-[#B8B8BA] mt-2 mb-2"></div>
                         <p class="text-xs ">Benkler studies commons-based peer production, and published his seminal
@@ -145,10 +163,13 @@
                             Network in 2006.</p>
                     </div>
 
+                
+
                 </div>
+                
                 <!-- Speaker 2 -->
 
-                <div class="flex  gap-10">
+                <div class="flex  gap-10 max-sm:hidden">
                     <div>
                         <img class="w-14 h-14 absolute  " src="./backgrounds/png-background.png"
                             alt="PNG background image">
@@ -167,7 +188,7 @@
                     </div>
                 </div>
                 <!-- Speaker 3 -->
-                <div class="flex  gap-10">
+                <div class="flex  gap-10  ">
                     <div>
                         <img class="w-14 h-14 absolute  " src="./backgrounds/png-background.png"
                             alt="PNG background image">
@@ -185,7 +206,7 @@
                     </div>
                 </div>
                 <!-- Speaker 4 -->
-                <div class="flex  gap-10">
+                <div class="flex  gap-10 max-sm:hidden">
                     <div>
                         <img class="w-14 h-14 absolute " src="./backgrounds/png-background.png"
                             alt="PNG background image">
@@ -204,7 +225,7 @@
                     </div>
                 </div>
                 <!-- Speaker 5 -->
-                <div class="flex  gap-10">
+                <div class="flex  gap-10 max-sm:hidden">
                     <div>
                         <img class="w-14 h-14 absolute " src="./backgrounds/png-background.png"
                             alt="PNG background image">
@@ -226,9 +247,9 @@
                     </div>
                 </div>
                 <!-- Speaker 6 -->
-                <div class="flex  gap-10">
+                <div class="flex  gap-10 max-sm:hidden">
                     <div>
-                        <img class="w-14 h-14 absolute " src="./backgrounds/png-background.png"
+                        <img class="w-14 h-14 absolute  " src="./backgrounds/png-background.png"
                             alt="PNG background image">
 
                         <img img class="w-32 h-32 relative top-4 left-4" src="./speakers/Ryan-Merkley.png"
@@ -246,12 +267,17 @@
                             movement.</p>
                     </div>
                 </div>
+                
+                <button class="sm:hidden  px-8 py-4 border-2 font-sm ">
+                    MORE <i class="fa-solid fa-angle-down" style="color: #ee523c;"></i>
+                </button>
             </div>
+            
         </section>
         <!-- Partners Section -->
 
 
-        <section class=" bg-[#404145] flex flex-col justify-center items-center py-10 px-28 ">
+        <section class="  max-sm:hidden bg-[#404145] flex flex-col justify-center items-center py-10 px-28 ">
             <h2 class="text-[#D3D3D3] text-xl mr-2">Partner</h2>
             <!-- Orange Line -->
             <div class="flex gap-4">
@@ -259,7 +285,7 @@
                 <div class="w-40 h-px py-[2px] bg-[#45464A] mt-2 mb-8 ml-16 "></div>
                 <div class="w-20 h-[3px] bg-[#45464A] mt-2 mb-8"></div>
             </div>
-            
+
             <div class="flex gap-8 justify-center items-center">
                 <img class="w-28 gray-logo-filter border-box " src="./logos/google.png" alt="google's logo">
                 <img class="w-28 gray-logo-filter border-box " src="./logos/naver.png" alt="naver's logo">
@@ -268,28 +294,20 @@
 
         </section>
         <!-- Footer -->
-        <footer class="bg-[#F2F2F2] flex justify-center items-center gap-20 py-10 px-40">
+        <footer class=" max-sm:hidden bg-[#F2F2F2] flex justify-center items-center gap-20 py-10 px-40">
 
-            <img src="./logos/creative-commons-korea.png" alt=" creative commons korea's logo"  class="pl-18 ">
-            <div >
+            <img src="./logos/creative-commons-korea.png" alt=" creative commons korea's logo" class="pl-18 ">
+            <div>
                 <p class="text-xs font-bold pb-4">2015 Creative Comons Korea. Some Rights Reserved.</p>
                 <p class="text-xs">달리 정하지 않은 인사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다. </p>
-            <p class="text-xs">자세한 이용기능 내용과 허락조건은
-                http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
+                <p class="text-xs">자세한 이용기능 내용과 허락조건은
+                    http://creativecommons.org/licences/by/2.0/kr 를 보세요.</p>
             </div>
 
 
 
         </footer>
     </main>
-
-
-
-
-
-
-
-
 </body>
 
 </html>

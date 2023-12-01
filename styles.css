@@ -18,3 +18,11 @@ h1 {
 .date {
     font-family: 'COCOGOOSE' , sans-serif;
 }
+
+.gray-logo-filter {
+    
+    filter: grayscale(100%)
+}
+
+
+
