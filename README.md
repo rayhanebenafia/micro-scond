@@ -1,1 +1,1 @@
-# micro-scond
+# micro-second
