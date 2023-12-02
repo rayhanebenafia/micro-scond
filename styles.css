@@ -5,12 +5,12 @@
 
 h1 {
     font-family: 'COCOGOOSE' , sans-serif;
-    /*
-    background-image: url('./backgrounds/orange-light.jpg');
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;*/
+    
+    background-image: url('./backgrounds/bg-txt.jfif');
+
+        background-repeat: repeat; 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
     
 }
 
